@@ -1,0 +1,2 @@
+# BurpUploadConverter
+在bp中request模块中可以切换到文件上传类型请求
