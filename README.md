@@ -36,8 +36,10 @@
     *   插件会自动将请求方法改为 `POST`，`Content-Type` 改为 `multipart/form-data`，并填充 Payload。
 
 2.  **针对已有参数的测试**：
-    *   如果原请求是 `GET /index.php?id=1&upload_file=`。
-    *   右键转换后，插件会自动保留 `id=1`，并将 `upload_file` 字段填充为对应的文件内容（如 PHP 一句话木马）。
+    *   如果原请求是 `GET /index.php?upload_file=&test=123`。
+    *   右键转换后，插件会自动保留 `upload_file`，并将 `test=123` 字段填充为对应的文件内容（如 PHP 一句话木马）。
+   <img width="2495" height="1174" alt="image" src="https://github.com/user-attachments/assets/c2f70531-d144-4a9f-b742-3664281f3166" />
+
 
 3.  **快速切换 Payload**：
     *   在已经是 Multipart 的上传请求中，再次右键选择不同的类型（例如从 `PHP` 切换为 `JPG`）。
